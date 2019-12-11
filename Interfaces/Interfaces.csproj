@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\ObjectsLibrary\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\ObjectsLibrary\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F28B8BEB-6C0C-41C1-AE79-F0534EC3DABD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Interfaces</RootNamespace>
+    <AssemblyName>Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\ObjectsLibrary\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\ObjectsLibrary\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\ObjectsLibrary\packages\EntityFramework.SqlServerCompact.6.3.0\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\ObjectsLibrary\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGame.Designer.cs">
+      <DependentUpon>AddGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGamer.Designer.cs">
+      <DependentUpon>AddGamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStadion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStadion.Designer.cs">
+      <DependentUpon>AddStadion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteGame.Designer.cs">
+      <DependentUpon>DeleteGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteGamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteGamer.Designer.cs">
+      <DependentUpon>DeleteGamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStadion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStadion.Designer.cs">
+      <DependentUpon>DeleteStadion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindGame.Designer.cs">
+      <DependentUpon>FindGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindGamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindGamer.Designer.cs">
+      <DependentUpon>FindGamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindStadion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindStadion.Designer.cs">
+      <DependentUpon>FindStadion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyCompany.Designer.cs">
+      <DependentUpon>ModifyCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyGame.Designer.cs">
+      <DependentUpon>ModifyGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyGamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyGamer.Designer.cs">
+      <DependentUpon>ModifyGamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowGame.Designer.cs">
+      <DependentUpon>ShowGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowGamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowGamer.Designer.cs">
+      <DependentUpon>ShowGamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowStadion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowStadion.Designer.cs">
+      <DependentUpon>ShowStadion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddGame.resx">
+      <DependentUpon>AddGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGamer.resx">
+      <DependentUpon>AddGamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStadion.resx">
+      <DependentUpon>AddStadion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteGame.resx">
+      <DependentUpon>DeleteGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteGamer.resx">
+      <DependentUpon>DeleteGamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStadion.resx">
+      <DependentUpon>DeleteStadion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindGame.resx">
+      <DependentUpon>FindGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindGamer.resx">
+      <DependentUpon>FindGamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindStadion.resx">
+      <DependentUpon>FindStadion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyCompany.resx">
+      <DependentUpon>ModifyCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyGame.resx">
+      <DependentUpon>ModifyGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyGamer.resx">
+      <DependentUpon>ModifyGamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShowGame.resx">
+      <DependentUpon>ShowGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowGamer.resx">
+      <DependentUpon>ShowGamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowStadion.resx">
+      <DependentUpon>ShowStadion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neymar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neymar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Action\Action.csproj">
+      <Project>{e80244c4-7a08-451a-957c-b4f1b71c9a5f}</Project>
+      <Name>Action</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\ObjectsLibrary\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\ObjectsLibrary\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\ObjectsLibrary\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\ObjectsLibrary\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\ObjectsLibrary\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\ObjectsLibrary\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+</Project>
